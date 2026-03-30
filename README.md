@@ -1,4 +1,4 @@
-<img src="assets/img/portada.png" alt="Portada" width="554" height="1014">
+<img src="assets/img/portada.png" alt="Portada" width="768" height="1408">
 <br>
 <br>
 <br>
