@@ -1,4 +1,4 @@
-<img src="assets/img/portada.png" alt="Portada" width="768" height="1408">
+<img src="assets/img/proyecto.png" alt="Proyecto" width="768" height="1408">
 <br>
 <br>
 <br>
@@ -11,26 +11,32 @@ La compañía Sweet Lift Taxi ha recopilado datos históricos sobre pedidos de t
 <br>
 
 ## **Objetivo del proyecto**
-La secuencia del proyecto es la siguiente:
+La secuencia del proyecto fue la siguiente:
 
-* Se 
+* Se cargaron los conjuntos de datos y se realizo un analisis exploratorio. Como es un serie temporal se transformo a horas y días para visualizar las gráficas de mejor manera. 
+
+* Se verificó visualmente por estacionalidad, se observó la serie de tiempo a diferentes tiempos, se observó la tendencia a diferentes tiempos  y finalmente, se observaron los residuales a diferentes tiempos.
+
+* Se entrenaron diferentes modelos de predicción usando el conjunto de datos de entrenamiento, obteniendo los mejores parametros para cada modelo.
+
+* Finalmente, se validaron los modelos con los mejores parámetros usando el conjunto de datos de prueba, buscando obtener el métrico de raíz del error cuadrático medio (RECM) menor a 48.
 <br>
 <br>
 <br>
 
 ## **Lenguajes y herramientas usadas**
-Language: Python
+Plataforma: Jupyter Notebook
 
-Libraries: Pandas, Scikit-learn, XGBoost, Matplotlib/Seaborn.
+Lenguajes: Python
 
-Tools: Jupyter Notebooks, Git.
+Librerias: Pandas, Matplotlib, Numpy, Statsmodels, Scikit-learn
+
+Modelos utilizados: Regresión lineal, Bosque aleatorio y Arbol de decisión.
 <br>
 <br>
 <br>
 
 ## **Conclusiones**  
-Metric: Achieved a Root Mean Square Error (RMSE) of 43.7 orders.
+En la tabla siguiente se puede  observar que de los 3 modelos evaluados con el conjunto de prueba (10% de conjunto original), solo 2 cumplen con el objetivo de estar por debajo de 48 de RMSE. Los modelos de arbol de decision y bosque aleatorio son los que cumplen con el requisito del proyecto, si se tuviera que elegir entre alguno de los dos se elegiria el de bosque aleatorio que es el que esta mas debajo de 48.
 
-Performance: The model consistently stayed below the error target, outperforming baseline statistical methods.
 
-Value: Provided actionable insights for real-time fleet adjustments based on hourly forecasts.
